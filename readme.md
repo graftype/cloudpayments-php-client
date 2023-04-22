@@ -4,8 +4,23 @@
 Позволяет обращаться к [API CloudPayments](http://cloudpayments.ru/Docs/Api) из кода на PHP.
 
 ## Установка
+
+composer.json
+
 ```bash
-composer require cloudpayments/cloudpayments-php-client
+{
+    ....
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git@github.com:graftype/cloudpayments-php-client.git"
+        }
+    ]
+}
+```
+
+```bash
+composer require graftype/cloud-payments-client
 ```
 
 ## Использование
