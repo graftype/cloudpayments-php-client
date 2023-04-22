@@ -20,7 +20,7 @@ composer.json
 ```
 
 ```bash
-composer require graftype/cloud-payments-client
+composer require graftype/cloudpayments-php-client
 ```
 
 ## Использование
