@@ -1,7 +1,6 @@
 {
     "name" : "graftype/cloudpayments-php-client",
     "description": "Client for CloudPayments.ru",
-    "version" : "0.0.9",
     "type" : "library",
     "license" : "MIT",
     "require" : {
