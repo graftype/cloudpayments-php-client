@@ -332,7 +332,7 @@ class Manager
             throw new Exception\RequestException($response);
         }
 
-        return $response['Model']['Id'] ?? 0;
+        return $response;
     }
 
     /**
