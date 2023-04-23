@@ -296,6 +296,8 @@ class Manager
     }
     
     /**
+     * Формирование кассового чека
+     * 
      * @param $inn
      * @param $invoiceId
      * @param $accountId
@@ -331,6 +333,38 @@ class Manager
         }
 
         return $response['Model']['Id'] ?? 0;
+    }
+
+    /**
+     * Запрос статуса чека
+     * 
+     * @param $id string
+     */
+    public function receiptStatus($id)
+    {
+        $response = $this->sendJSONRequest('/kkt/receipt/status/get', ['Id' => $id]);
+
+        if (!$response['Success']) {
+            throw new Exception\RequestException($response);
+        }
+
+        return $response;
+    }
+
+    /**
+     * Получение данных чека
+     * 
+     * @param $id string
+     */
+    public function findReceipt($id)
+    {
+        $response = $this->sendJSONRequest('/kkt/receipt/get', ['Id' => $id]);
+
+        if (!$response['Success']) {
+            throw new Exception\RequestException($response);
+        }
+
+        return $response;
     }
 
     /**
