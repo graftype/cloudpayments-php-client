@@ -356,7 +356,7 @@ class Manager
      * 
      * @param $id string
      */
-    public function findReceipt($id)
+    public function receiptInfo($id)
     {
         $response = $this->sendJSONRequest('/kkt/receipt/get', ['Id' => $id]);
 
