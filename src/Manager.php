@@ -311,9 +311,9 @@ class Manager
     {
         $receiptArray = [
             'Items' => $items, 
-            'taxationSystem' => $taxationSystem,
-            'email' => $email,
-            'phone' => $phone
+            'TaxationSystem' => $taxationSystem,
+            'Email' => $email,
+            'Phone' => $phone
         ];
        
         $defaultParams = [
